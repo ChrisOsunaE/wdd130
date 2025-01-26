@@ -1,0 +1,70 @@
+:root{
+  --primary-color: #0b2e19;
+  --secondary-color: #7B7554;
+  --accent1-color: #3c3d83;
+  --acent2-color: #bcbdd0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--primary-color);  
+  font-family: kalam;
+}
+
+p{
+  color: var(--secondary-color);
+  font-family: "Pt Sans";
+}
+
+.social-media{
+  text-decoration: none;
+}
+
+
+/* Hero */
+.hero{
+  position: relative;
+}
+
+.hero img{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.hero h1{
+  position: absolute;
+  top: 15%;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  color: var(--acent2-color);
+}
+
+article{
+  position: absolute;
+  background-color: rgba(60, 61, 131, 0.8);
+  top: 35%;
+  margin: 20px;;
+  padding: 1rem;
+  }
+
+article img{
+  float: right;
+  max-width: 30%;
+  margin: 10px;
+}
+
+article p{
+  color: var(--acent2-color);
+}
