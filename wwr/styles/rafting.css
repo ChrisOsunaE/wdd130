@@ -14,10 +14,11 @@
 body{
   max-width: 800px;
   margin: 0 auto;
+  background-color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: var(--primary-color);  
+  color: var(--acent2-color);  
   font-family: kalam;
 }
 
@@ -45,7 +46,7 @@ p{
 .hero h1{
   position: absolute;
   top: 15%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(11, 46, 25, 0.8);
   width: 100%;
   text-align: center;
   color: var(--acent2-color);
@@ -67,4 +68,118 @@ article img{
 
 article p{
   color: var(--acent2-color);
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+header img{
+  max-width: 60%;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  color: var(--acent1-color);
+}
+
+nav a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: large;
+}
+
+nav a:hover{
+  color: var(--accent1-color);
+  scale: 1.1;
+}
+
+.history{
+  margin: 1rem 0 1rem 0;
+}
+
+.history h2{
+  text-align: center;
+}
+
+.history-content{
+  display: flex;
+  gap: 1rem;
+}
+
+.history-content img{
+  width: 40%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.history-content p{
+  color: var(--acent2-color);
+}
+
+.adventure{
+  margin: 2rem 0;
+}
+
+.adventure h2{
+  text-align: center;
+}
+
+.adventure-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.adventure-content img{
+  height: 120px;
+  width: 100%;
+  object-fit: cover;}
+
+figcaption{
+  color: var(--acent2-color);
+  text-align: center;
+}
+
+/* footer */
+footer{
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer p{
+  color: var(--acent1-color);
+  text-align: center;
+  grid-column: 2;
+}
+
+footer nav{
+  display: flex;
+  padding:0;
+  gap: .5rem;
+  align-items: center;
+  justify-content: flex-end;
+  grid-column: 3;
+}
+
+footer nav img{
+  max-width: 60%;
 }
