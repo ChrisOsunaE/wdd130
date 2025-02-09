@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/rafting.css" />
-    <meta
-      name="description"
-      content="Contact form. Rapids is a company that offers rafting trips."
-    />
-    <meta name="author" content="Christopher Osuna" />
-    <title>Contact Us</title>
-  </head>
-  <body>
-    <header>
-      <img src="./images/z-rapids-trees.png" alt="logo" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact us</a>
-      </nav>
-    </header>
-    <main>
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" >
+  <link rel="stylesheet" href="styles/rafting.css" >
+  <meta name="description" content="Contact form. Rapids is a company that offers rafting trips." >
+  <meta name="author" content="Christopher Osuna" >
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <img src="./images/z-rapids-trees.png" alt="logo" >
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  </header>
+  <main>
 
     <section class="contact">
       <div class="contact-info">
@@ -41,80 +39,100 @@
         <p>wwr@adventure.com</p>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d185552.27669229018!2d-53.626635298701856!3d-4.423687232203993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1739068979725!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d185552.27669229018!2d-53.626635298701856!3d-4.423687232203993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1739068979725!5m2!1ses-419!2smx"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      </section>
+    </section>
 
-      <section class="employees">
-        <h2>Our team</h2>
-        <div class="adventure-content">
+    <section class="employees">
+      <h2>Our team</h2>
+      <div class="adventure-content">
         <figure>
-          <img src="images/profile1.webp" alt="employee1" />
+          <img src="images/profile1.webp" alt="employee1">
           <figcaption>
-            <h3>Crystal Waters Retreat</h3>
+            <h3>Jackson "Wavebreaker" Hayes</h3>
+            <p>Rafting Guide</p>
+          </figcaption>
         </figure>
+        
         <figure>
-          <img src="images/profile2.webp" alt="employee2" />
+          <img src="images/profile2.webp" alt="employee2">
           <figcaption>
-            <h3>Wilderness Camping Escape</h3>
+            <h3>River Donovan</h3>
+            <p>CEO</p>
+          </figcaption>
         </figure>
+        
         <figure>
-          <img src="images/profile3.webp" alt="employee3" />
+          <img src="images/profile3.webp" alt="employee3">
           <figcaption>
-            <h3>Kayak Explorer Challenge</h3>
+            <h3>Emma McKinney</h3>
+            <p>Sales Contact</p>
+          </figcaption>
         </figure>
+        
       </div>
-      </section>
+    </section>
 
-      <section class="contact-form">
-        <h2>Send us a message</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <fieldset>
-            <legend>Purpose of your message</legend>
-            <div>
-              <input type="radio" id="general" name="purpose" value="general" />
-              <label for="general">General Inquiry</label>
-            </div>
-            <div>
-              <input type="radio" id="reservation" name="purpose" value="reservation" />
-              <label for="reservation">Reservation Question</label>
-            </div>
-            <div>
-              <input type="radio" id="suggestion" name="purpose" value="suggestion" />
-              <label for="suggestion">Website Suggestion</label>
-            </div>
+    <section class="contact-form">
+      <h2>Send us a message</h2>
+      <form>
+        <fieldset class="personal-info">
+          <legend>Personal Info</legend>
+          <div class="form-input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required >
+          </div>
+          <div class="form-input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required >
+          </div>
         </fieldset>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+        <fieldset class="radio">
+          <legend>Purpose of your message</legend>
+          <div class="radio-buttons">
+            <input type="radio" id="general" name="purpose" value="general" >
+            <label for="general">General Inquiry</label>
+          </div>
+          <div class="radio-buttons">
+            <input type="radio" id="reservation" name="purpose" value="reservation" >
+            <label for="reservation">Reservation Question</label>
+          </div>
+          <div class="radio-buttons">
+            <input type="radio" id="suggestion" name="purpose" value="suggestion" >
+            <label for="suggestion">Website Suggestion</label>
+          </div>
+        </fieldset>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="8" required></textarea> 
+        <div class="checkbox">
+          <input type="checkbox" id="suscription" name="suscription" >
           <label for="suscription">Please subscribe me to the monthly newsletter</label>
-          <input type="checkbox" id="suscription" name="suscription" />
+        </div>
+        <button type="submit">Send</button>
+      </form>
 
-          <button type="submit">Send</button>
-        </form>
+    </section>
 
-      </section>
 
-      
-    </main>
-    <footer>
-      <p>&copy; 2025 Rapid - Christopher Osuna</p>
-      <!-- link to mockup -->
-      <p><a href="https://app.moqups.com/gBgjdcMHYUh7FKnoiE1LOm9eBv0rwidy/view/page/aa2a224e5">Link to Mockup</a></p>
-      <nav>
-        <a class="social-media" href="https://www.twitter.com">
-          <img src="images/twitter.png" alt="Twitter" />
-        </a>
-        <a class="social-media" href="https://www.facebook.com">
-          <img src="images/facebook.png" alt="Facebook" />
-        </a>
-        <a class="social-media" href="https://www.instagram.com">
-          <img src="images/instagram.png" alt="Instagram" />
-        </a>
-      </nav>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <p>&copy; 2025 Rapid - Christopher Osuna</p>
+    <p><a href="https://app.moqups.com/gBgjdcMHYUh7FKnoiE1LOm9eBv0rwidy/view/page/aa2a224e5">Link to Mockup</a></p>
+    <nav>
+      <a class="social-media" href="https://www.twitter.com">
+        <img src="images/twitter.png" alt="Twitter" >
+      </a>
+      <a class="social-media" href="https://www.facebook.com">
+        <img src="images/facebook.png" alt="Facebook" >
+      </a>
+      <a class="social-media" href="https://www.instagram.com">
+        <img src="images/instagram.png" alt="Instagram" >
+      </a>
+    </nav>
+  </footer>
+</body>
+
 </html>
