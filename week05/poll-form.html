@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 130 | HTML Form - User Poll</title>
-    </head>
-    <body>
-        <header>
-            <h1>WDD 130 | Christopher Osuna | HTML Form - User Poll</h1>
-        </header>
-        <main>
-            <form>
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <label for="fullname">Fullname:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Questions</legend>
-                    <label for="browser">What is your favorite browser?</label>
-                    <select name="browser" id="browser">
-                        <option value="chrome">Chrome</option>
-                        <option value="firefox">Firefox</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Edge</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="pet">Do you have a householde pet</label>
-                    <input type="checkbox" name="pet" id="pet">
-                    <label for="feedback">List the places you have lived</label>
-                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="New York, Tokyo, Paris, Sydney, Rio de Janeiro, Rome, Utah"></textarea>
-                </fieldset>
-                <button type="submit">Submit Pull</button>
-            </form>
-
-        </main>
-        <footer>
-            <p>©2025 | HTML Form - User Poll Activity | Christopher Osuna</p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+    <title>WDD 130 | HTML Form - User Poll</title>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 130 | Christopher Osuna | HTML Form - User Poll</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="form-item column1">
+          <label for="fullname">Fullname:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-item column1">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Questions</legend>
+          <div class="form-item column2">
+          <label for="browser">What is your favorite browser?</label>
+          <select name="browser" id="browser">
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="edge">Edge</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-item column2">
+          <label for="pet">Do you have a householde pet</label>
+          <input type="checkbox" name="pet" id="pet">
+        </div>
+          <label for="feedback">List the places you have lived</label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+            placeholder="New York, Tokyo, Paris, Sydney, Rio de Janeiro, Rome, Utah"
+          ></textarea>
+        </fieldset>
+        <button type="submit">Submit Pull</button>
+      </form>
+    </main>
+    <footer>
+      <p>©2025 | HTML Form - User Poll Activity | Christopher Osuna</p>
+    </footer>
+  </body>
 </html>
