@@ -10,13 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/rafting.css" />
-    <meta
-      name="description"
-      content="Rapids is a company that offers rafting trips."
-    />
+    <meta name="description" content="Main page" />
     <meta name="author" content="Christopher Osuna" />
-    <title>About Us</title>
+    <title>Whitewater Rafting</title>
   </head>
+
   <body>
     <header>
       <img src="./images/z-rapids-trees.png" alt="logo" />
@@ -27,10 +25,11 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+
     <main>
       <div class="hero">
-        <img src="images/hero.webp" alt="hero_image" loading="lazy" />
-        <h1>Rapids</h1>
+        <img src="images/hero.webp" alt="hero_image" loading="eager" />
+        <h1>Live the Rapid Rafting experience!</h1>
         <article>
           <img src="images/client.webp" alt="happy_client" />
           <p>
@@ -47,54 +46,45 @@
         </article>
       </div>
 
-      <section class="history">
-        <h2>History</h2>
-        <div class="history-content">
-          <p>
-            Born from a passion for adventure and the great outdoors, Rapid Rafting was founded by a group of explorers who wanted to share the thrill of whitewater rafting with the world. What started as a small local operation on the roaring rivers of the Pacific Northwest quickly grew into a beloved destination for adventure seekers of all levels.
-          </p>
-          <img src="images/history.webp" alt="" />
-          <p>
-            Over the years, we've expanded our offerings to include kayaking, camping, and family-friendly excursions, ensuring that everyone can experience the magic of the river. Whether you're chasing adrenaline or seeking a peaceful escape in nature, Rapid Rafting is here to make your journey unforgettable.
-          </p>
-        </div>
+      <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Subscribe</button>
+        </form>
       </section>
 
-      <section class="adventure">
-        <h2>Adventure Awaits You!</h2>
-        <div class="adventure-content">
-          <figure>
-            <img src="images/adventure1.webp" alt="adventure1" />
-            <figcaption>
-              <h3>Crystal Waters Retreat</h3>
-          </figure>
-          <figure>
-            <img src="images/adventure2.webp" alt="adventure2" />
-            <figcaption>
-              <h3>Wilderness Camping Escape</h3>
-          </figure>
-          <figure>
-            <img src="images/adventure3.webp" alt="adventure3" />
-            <figcaption>
-              <h3>Kayak Explorer Challenge</h3>
-          </figure>
+      <section class="call-to-action">
+        <h2>Discover Our Exciting Trips!</h2>
+        <a href="trips.html" class="cta-button">View Trips</a>
+      </section>
 
-          <figure>
-            <img src="images/adventure4.webp" alt="adventure4" />
-            <figcaption>
-              <h3>Family River Getaway</h3>
-          </figure>
-
-          <figure>
-            <img src="images/adventure5.webp" alt="adventure5" />
-            <figcaption>
-              <h3>Team Rafting Quest</h3>
-          </figure>
+      <section class="grid-layout">
+        <div class="grid-item">
+          <img src="images/profile1.webp" alt="White Water Rafting" />
+          <p>Explore the most thrilling rivers with our expert guides.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/adventure5.webp" alt="Rafting Gear" />
+          <p>
+            We provide all the necessary gear for a safe and fun experience.
+          </p>
         </div>
       </section>
     </main>
     <footer>
       <p>&copy; 2025 Rapid - Christopher Osuna</p>
+      <p>
+        <a
+          href="https://app.moqups.com/gBgjdcMHYUh7FKnoiE1LOm9eBv0rwidy/view/page/aa2a224e5"
+          >Link to Mockup</a
+        >
+      </p>
       <nav>
         <a class="social-media" href="https://www.twitter.com">
           <img src="images/twitter.png" alt="Twitter" />
